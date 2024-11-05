@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.logo {
+  font-size: 40px;
+}

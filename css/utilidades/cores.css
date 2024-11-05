@@ -1,0 +1,70 @@
+:root {
+  /* Paleta Global */
+  --bg-header: #002e5d; /* Azul Marinho - Fundo para cabeçalhos e menus */
+  --bg-hover: #1f4b99; /* Azul Médio - Hover em links e botões */
+  --bg-main: #f4f4f4; /* Branco Suave - Fundo das seções principais */
+  --bg-secondary: #e3e3e3; /* Cinza Claro - Fundo para elementos neutros */
+  --border-color: #b0b0b0; /* Cinza Médio - Divisórias e ícones menos importantes */
+  --text-primary: #ffffff;
+  --text-secondary: #4a4a4a; /* Cinza Escuro - Textos secundários */
+  --highlight: #fdd835; /* Amarelo Brilhante - Destaques e botões principais */
+  --accent: #4caf50; /* Verde Pokémon - Destaques em botões e links */
+  /* GBA */
+  --bg-header-gba: #5b0e99; /* Roxo Primário - Fundo principal do GBA */
+  --bg-header-gba-hover: #a982d2; /* Roxo Claro - Hover em links e detalhes */
+  /* NDS */
+  --bg-header-nds: #d9d9d9; /* Cinza Gelo - Fundo de contraste neutro */
+  /* 3DS */
+  --bg-header-3nds: #990000; /* Vermelho Escuro - Cabeçalhos e áreas intensas */
+  --bg-header-3nds-hover: #c8102e; /* Vermelho Primário - Botões e destaques */
+  --accent-3ds: #999999; /* Cinza Metálico - Elementos secundários e divisórias */
+}
+
+.bg-header {
+  background-color: var(--bg-header);
+}
+.bg-main {
+  background-color: var(--bg-main);
+}
+.bg-hover {
+  background-color: var(--bg-hover);
+}
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.border-color {
+  border-color: var(--border-color);
+}
+.text-primary {
+  color: var(--text-primary);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.highlight {
+  background-color: var(--highlight);
+}
+.accent {
+  color: var(--accent);
+}
+/* GBA */
+.bg-header-gba {
+  background-color: var(--bg-header-gba);
+}
+.bg-header-gba-hover {
+  background-color: var(--bg-header-gba-hover);
+}
+/* NDS */
+.bg-header-nds {
+  background-color: var(--bg-header-nds);
+}
+/* 3DS */
+.bg-header-3ds {
+  background-color: var(--bg-header-3nds);
+}
+.bg-header-3ds-hover {
+  background-color: var(--bg-header-3nds-hover);
+}
+.accent-3ds {
+  color: var(--accent-3ds);
+}
