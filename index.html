@@ -22,13 +22,13 @@
       <nav aria-label="primaria" class="nav-header">
         <ul class="nav-header1 links">
           <li>
-            <h3><a href="./pages/gba.html">GBA</a></h3>
+            <a href="./pages/gba.html" class="link">GBA</a>
           </li>
           <li>
-            <h3><a href="./pages/nds.html">NDS</a></h3>
+            <a href="./pages/nds.html" class="link">NDS</a>
           </li>
           <li>
-            <h3><a href="./pages/3ds.html">3DS</a></h3>
+            <a href="./pages/3ds.html" class="link">3DS</a>
           </li>
         </ul>
         <div class="toggle_btn" id="toggle_btn">
@@ -51,18 +51,41 @@
     </div>
   </header>
   <main class="bg-main">
-    <div class=" main-container container flex">
-      <div>
-        <h1 class="title-main">Bem-vindo ao Universo Pokémon Online!</h1>
-        <p class="description">Aprenda a jogar online os clássicos de Pokémon dos consoles GBA, NDS e 3DS, e embarque em aventuras incríveis diretamente do seu navegador.</p>
-        <a href="#consoles">Comece agora</a>
+    <div class="main-container container flex">
+      <div class="texto">
+        <h1>Bem-vindo ao Universo Pokémon Online!</h1>
+        <p>Aprenda a jogar online os clássicos de Pokémon dos consoles GBA, NDS e 3DS. Faça troca ou batalhas de qualquer lugar com seus amigos.</p>
+        <a href="#consoles" class="link botao global">Comece agora</a>
       </div>
-      <div class="img">
-        <img src="./img/img-main.jpg">
+      <div class="img slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <div class="slide first">
+            <a href="./pages/3ds.html"><img src="./img/img-3ds-main.jpg"></a>
+          </div>
+          <div class="slide">
+            <a href="./pages/nds.html"><img src="./img/nds.jpg"></a>
+          </div>
+          <div class="slide">
+            <a href="./pages/gba.html"><img src="./img/gba.jpg"></a>
+          </div>
+        </div>
+        <div class="navigation-auto">
+          <div class="autobtn1"></div>
+          <div class="autobtn2"></div>
+          <div class="autobtn3"></div>
+        </div>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
       </div>
     </div>
   </main>
-  <script src=" script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 
