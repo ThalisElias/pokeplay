@@ -1,6 +1,7 @@
 :root {
   /* Paleta Global */
   --bg-header: #002e5d; /* Azul Marinho - Fundo para cabeçalhos e menus */
+  --bg-btn: #335185; /* Azul Médio - Hover em links e botões */
   --bg-hover: #1f4b99; /* Azul Médio - Hover em links e botões */
   --bg-main: #f4f4f4; /* Branco Suave - Fundo das seções principais */
   --bg-secondary: #e3e3e3; /* Cinza Claro - Fundo para elementos neutros */
@@ -25,6 +26,9 @@
 }
 .bg-main {
   background-color: var(--bg-main);
+}
+.bg-btn {
+  background-color: var(--bg-btn);
 }
 .bg-hover {
   background-color: var(--bg-hover);
