@@ -1,24 +1,23 @@
 :root {
-  /* Paleta Global */
-  --bg-header: #002e5d; /* Azul Marinho - Fundo para cabeçalhos e menus */
-  --bg-btn: #335185; /* Azul Médio - Hover em links e botões */
-  --bg-hover: #1f4b99; /* Azul Médio - Hover em links e botões */
-  --bg-main: #f4f4f4; /* Branco Suave - Fundo das seções principais */
-  --bg-secondary: #e3e3e3; /* Cinza Claro - Fundo para elementos neutros */
-  --border-color: #b0b0b0; /* Cinza Médio - Divisórias e ícones menos importantes */
+  --bg-header: #002e5d;
+  --bg-btn: #335185;
+  --bg-hover: #1f4b99;
+  --bg-main: #f4f4f4;
+  --bg-secondary: #e3e3e3;
+  --border-color: #b0b0b0;
   --text-primary: #ffffff;
-  --text-secondary: #4a4a4a; /* Cinza Escuro - Textos secundários */
-  --highlight: #fdd835; /* Amarelo Brilhante - Destaques e botões principais */
-  --accent: #4caf50; /* Verde Pokémon - Destaques em botões e links */
+  --text-secondary: #4a4a4a;
+  --highlight: #fdd835;
+  --accent: #4caf50;
   /* GBA */
-  --bg-header-gba: #5b0e99; /* Roxo Primário - Fundo principal do GBA */
-  --bg-header-gba-hover: #a982d2; /* Roxo Claro - Hover em links e detalhes */
+  --bg-header-gba: #5b0e99;
+  --bg-header-gba-hover: #a982d2;
   /* NDS */
-  --bg-header-nds: #d9d9d9; /* Cinza Gelo - Fundo de contraste neutro */
+  --bg-header-nds: #d9d9d9;
   /* 3DS */
-  --bg-header-3nds: #990000; /* Vermelho Escuro - Cabeçalhos e áreas intensas */
-  --bg-header-3nds-hover: #c8102e; /* Vermelho Primário - Botões e destaques */
-  --accent-3ds: #999999; /* Cinza Metálico - Elementos secundários e divisórias */
+  --bg-header-3nds: #990000;
+  --bg-header-3nds-hover: #c8102e;
+  --accent-3ds: #999999;
 }
 
 .bg-header {

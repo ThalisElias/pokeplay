@@ -1,0 +1,122 @@
+.dropdown__button {
+  cursor: pointer;
+}
+.dropdown__arrow {
+  font-size: 1.5rem;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+.dropdown__content,
+.dropdown__group,
+.dropdown__list {
+  display: grid;
+}
+.dropdown__container {
+  background-color: var(--bg-main);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s;
+}
+.dropdown__content {
+  row-gap: 1.75rem;
+}
+.dropdown__group {
+  padding-left: 2.5rem;
+  row-gap: 0.5rem;
+}
+.dropdown__group:first-child {
+  margin-top: 1.25rem;
+}
+.dropdown__group:last-child {
+  margin-bottom: 1.25rem;
+}
+.dropdown__icon {
+  font-size: 1.25rem;
+  color: var(--highlight);
+}
+.dropdown__title {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--bg-header);
+}
+.dropdown__list {
+  row-gap: 0.5rem;
+}
+.dropdown__link:hover {
+  color: var(--bg-header);
+}
+.show-dropdown .dropdown__arrow {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 300px) {
+  .dropdown__group {
+    padding-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 1118px) {
+  .dropdown__button {
+    column-gap: 0.25rem;
+    pointer-events: none;
+  }
+  .dropdown__container {
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6.5rem;
+    background-color: var(--body-color);
+    box-shadow: 0 6px 8px -4px rgba(10, 24, 51, 0.1);
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .dropdown__container.resources,
+  .dropdown__container.company {
+    left: auto;
+  }
+  .dropdown__content {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+  .dropdown__group {
+    padding: 4rem 0;
+    align-content: baseline;
+    row-gap: 1.25rem;
+  }
+  .dropdown__group:first-child,
+  .dropdown__group:last-child {
+    margin: 0;
+  }
+  .dropdown__list {
+    row-gap: 0.75rem;
+  }
+  .dropdown__icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-btn);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+  .dropdown__icon i {
+    font-size: 2rem;
+  }
+  .dropdown__link:hover {
+    color: var(--bg-hover);
+  }
+  .dropdown__item {
+    cursor: pointer;
+  }
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  .dropdown__item:hover > .dropdown__container {
+    top: 5.5rem;
+    opacity: 1;
+    pointer-events: initial;
+    cursor: initial;
+  }
+}

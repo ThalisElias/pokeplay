@@ -8,3 +8,4 @@
 @import "./utilidades/tipografia.css";
 /* HOME */
 @import "./home/main.css";
+@import "./global/dropdown.css";
