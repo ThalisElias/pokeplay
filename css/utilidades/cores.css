@@ -44,6 +44,9 @@
 .text-secondary {
   color: var(--text-secondary);
 }
+.text-terciary {
+  color: var(--bg-hover);
+}
 .highlight {
   background-color: var(--highlight);
 }

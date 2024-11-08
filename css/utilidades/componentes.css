@@ -1,5 +1,6 @@
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   margin-inline: 1.5rem;
 }
 @media screen and (min-width: 1152px) {
@@ -8,6 +9,7 @@
   }
 }
 .botao {
+  margin: 0.8rem;
   display: inline-block;
   padding: 1rem 1.5rem;
   color: #ffffff;
