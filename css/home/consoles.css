@@ -1,14 +1,72 @@
+.section_console_h2 {
+  margin: 1rem 0;
+}
 .consoles_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .console {
-  border: 1px solid;
+  box-shadow: 0 6px 8px -4px rgba(10, 24, 51, 0.5);
+  padding: 0 1.2rem;
+  border-radius: 5px;
+  text-align: left;
+  height: 250px;
+  width: 250px;
+}
+.console h3 {
+  margin-top: 1rem;
+  position: relative;
   text-align: center;
 }
-@media (max-width: 640px) {
+.console h3 img {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+}
+.console.gba h3 img {
+  width: 50px;
+  top: 0;
+  right: 0px;
+}
+.console.gbc h3 img {
+  width: 70px;
+  top: 0;
+  right: -20px;
+}
+.console.gbc {
+  background: linear-gradient(135deg, #7d3c98, #be63dd);
+}
+.console.gba {
+  background: linear-gradient(135deg, #0e76a8, #43c1ff);
+}
+.console.ds3 {
+  background: linear-gradient(135deg, #b8201a, #ee6055);
+}
+.console.nds {
+  background: linear-gradient(135deg, #4a4a4a, #9a9a9a);
+}
+.console p {
+  padding: 1rem;
+}
+@media (max-width: 800px) {
   .consoles_container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .consoles_container {
+    display: flex;
+    overflow-x: auto;
+    height: auto;
+    gap: 1rem;
+  }
+  .console h3 img {
+    position: absolute;
+    width: 100px;
+    top: -38px;
+  }
+  .console {
+    flex: 0 0 250px;
   }
 }

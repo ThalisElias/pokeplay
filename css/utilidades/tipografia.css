@@ -14,6 +14,9 @@ h3 {
 p {
   font: 400 1rem/1.6 "Open Sans", sans-serif; /* Base (Mobile) - 16px */
 }
+.cards-p {
+  font: 400 0.8rem/1.5 "Open Sans", sans-serif; /* Base (Mobile) - 16px */
+}
 /* Link */
 a,
 .link {
