@@ -8,6 +8,9 @@
     margin-inline: auto;
   }
 }
+.flex {
+  display: flex;
+}
 .botao {
   margin: 0.8rem;
   display: inline-block;
@@ -19,6 +22,11 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 640px) {
+  .botao {
+    padding: 0.8rem 1rem;
+  }
 }
 /* Botão Global */
 .botao.global {

@@ -10,19 +10,24 @@ main {
   justify-content: space-between;
 }
 .main_container .main__left {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
+  display: grid;
+  justify-items: center;
 }
+
 .main_container .main__left p {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .main_container .main__right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  gap: 1rem;
 }
 .main_container .main__right img {
+  margin-left: 3rem;
   height: auto;
   max-width: 100%;
 }
@@ -30,6 +35,9 @@ main {
   .main_container {
     padding-top: 0;
     grid-template-columns: 1fr;
+  }
+  .main_container .main__right img {
+    margin-left: 1rem;
   }
 }
 

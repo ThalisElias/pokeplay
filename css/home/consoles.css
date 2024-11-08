@@ -1,0 +1,14 @@
+.consoles_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.console {
+  border: 1px solid;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .consoles_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

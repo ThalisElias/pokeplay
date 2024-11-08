@@ -2,10 +2,11 @@
 @import "./global/reset.css";
 @import "./global/header.css";
 @import "./global/footer.css";
+@import "./global/dropdown.css";
 /* UTILIDADES */
 @import "./utilidades/componentes.css";
 @import "./utilidades/cores.css";
 @import "./utilidades/tipografia.css";
 /* HOME */
 @import "./home/main.css";
-@import "./global/dropdown.css";
+@import "./home/consoles.css";
