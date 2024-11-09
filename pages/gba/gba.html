@@ -5,17 +5,306 @@
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/sytle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/sytle.css">
   <title>PokéPlay | GBA</title>
 </head>
 
 <body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="../../index.html" class="nav__logo link text-primary">PokéPlay</a>
+        <div class="nav__toggle text-primary" id="nav-toggle">
+          <i class="ri-menu-line nav__toggle-menu"></i>
+          <i class="ri-close-line nav__toggle-close"></i>
+        </div>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="../../index.html" class="nav__link text-primary">Home</a></li>
 
-  <script src="../script.js"></script>
+          <li class="dropdown__item">
+            <div class="nav__link dropdown__button link text-primary">
+              Consoles <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <div class="dropdown__container">
+              <div class="dropdown__content">
+                <div class="dropdown__group">
+                  <span class="dropdown__title">Game Boy Advanced</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="./pages/gba/gba.html" class="dropdown__link">Troca e Batalhas</a>
+                    </li>
+                    <li>
+                      <a href="./pages/gba/gba_eventos.html" class="dropdown__link">Eventos - Mystery Gift</a>
+                    </li>
+                    <li>
+                      <a href="./pages/gba/gbas_roms.html" class="dropdown__link">ROMS</a>
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+                <div class="dropdown__group">
+                  <span class="dropdown__title">
+                    Nintendo DS
+                  </span>
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="./pages/nds/nds.html" class="dropdown__link">Tutorial</a>
+                    </li>
+                    <li>
+                      <a href="./pages/nds/slot2.html" class="dropdown__link">Tranferir do GBA para o NDS</a>
+                    </li>
+                    <li>
+                      <a href="./pages/nds/nds_eventos.html" class="dropdown__link">Eventos - Mystery Gift</a>
+                    </li>
+                    <li>
+                      <a href="./pages/nds/nds_roms.html" class="dropdown__link">ROMS</a>
+                    </li>
+                  </ul>
+                  </span>
+                </div>
+                <div class="dropdown__group">
+                  <span class="dropdown__title">3DS</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="./pages/3ds/3ds.html" class="dropdown__link">Tutorial</a>
+                    </li>
+                    <li>
+                      <a href="./pages/3ds/eventos_3ds.html" class="dropdown__link">Eventos - Mystery Gift</a>
+                    </li>
+                    <li>
+                      <a href="./pages/3ds/roms_3ds.html" class="dropdown__link">ROMS</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown__group">
+                  <span class="dropdown__title">Game Boy / Game Boy Color</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="./pages/gbcgb/gbcgb.html" class="dropdown__link">Tutorial</a>
+                    </li>
+                    <li>
+                      <a href="./pages/gbcgb/gbcgb_eventos.html" class="dropdown__link">Eventos - Mystery Gift</a>
+                    </li>
+                    <li>
+                      <a href="./pages/gbcgb/gbcgb_roms.html" class="dropdown__link">ROMS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- <li class="dropdown__item">
+            <div class="nav__link dropdown__button link text-primary">
+              Resources<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <div class="dropdown__container resources">
+              <div class="dropdown__content">
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                    <i class="ri-code-line"></i>
+                  </div>
+                  <span class="dropdown__title">Web Templates</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="#" class="dropdown__link">Free Templates</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Premium Templates</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                    <i class="ri-pen-nib-line"></i>
+                  </div>
+                  <span class="dropdown__title">Designs</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="#" class="dropdown__link">Web Designs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">App Designs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Component Designs</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                    <i class="ri-apps-2-line"></i>
+                  </div>
+                  <span class="dropdown__title">Others</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="#" class="dropdown__link">Recent blogs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Tutorial videos</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Webinar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> -->
+
+
+          <li><a href="" class="nav__link link text-primary">WhatsApp</a></li>
+
+          <!-- <li class="dropdown__item">
+            <div class="nav__link dropdown__button link text-primary">
+              Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <div class="dropdown__container company">
+              <div class="dropdown__content">
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                    <i class="ri-community-line"></i>
+                  </div>
+
+                  <span class="dropdown__title">About us</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="#" class="dropdown__link">About us</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Support</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="dropdown__group">
+                  <div class="dropdown__icon">
+                    <i class="ri-shield-line"></i>
+                  </div>
+
+                  <span class="dropdown__title">Safety and quality</span>
+
+                  <ul class="dropdown__list">
+                    <li>
+                      <a href="#" class="dropdown__link">Cookie settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__link">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li> -->
+
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main class="container tutoriais_link">
+    <div class="estrutura">
+      <nav class="sidenav">
+        <ul class="docs">
+          <li><a href="#bios">Configuração BIOS</a></li>
+          <li><a href="#emulador">Configuração Emulador</a></li>
+          <li><a href="http://">Configuração Apk Port</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        <h3>Emulação de Cabo Link via Wi-fi para trocas/Batalhas</h3>
+        <div class="bios" id="bios">
+          <p><strong>Para se conectar como Server/Client é precio ter o arquivo BIOS (LINK NO FINAL DO TUTORIAL) no MyBoy ou PizzaBoy.</strong></p>
+          <p><strong>Passo a Passo:</strong></p>
+          <p>
+            1° passo - Vá em configurações(Settings). <br>
+            2° passo - Avançado. <br>
+            3° passo - selecione as opções Use BIOS e Boot BIOS. <br>
+            4° passo -selecione o arquivo BIOS baixado em seu celular.
+          </p>
+        </div>
+        <div class="emulador" id="emulador">
+          <p><Strong>Para conectar como Wi-fi/Client é preciso inserir o IP PUBLIC do jogador Server</Strong></p>
+          <p><strong>Passo a Passo:</strong></p>
+          <p>
+            1° passo - Com o jogo aberto, vá em configurações<br>
+            2° passo - Link Remote<br>
+            3° passo - Wi-fi Client<br>
+            4° passo - Insira o <strong>IP PUBLIC</strong> do jogador Server e a porta 6374.
+          </p>
+          <p><strong>OBS: Se a ROM for diferente, exemplo: <span class="firered">Fire Red</span> vs <span class="emerald">Emerald</span> aparecerá uma mensagem pedindo para inserir a ROM oposta da sua, na opção LOCATE GAME coloque a ROM e segue normal.</strong></p>
+          <p>Todas as ROMS de GBA se conectam. <span class="firered">Fire Red</span> <span class="leafgreen">Leaf Green</span> <span class="sapphire">Sapphire</span> <span class="ruby">Ruby</span> <span class="emerald">Emerald</span>
+          </p>
+        </div>
+        <div class="apkport" id="apkport">
+          <p><Strong>Para conectar como Wi-fi Server é preciso o aplicativo Apk Port Forwarder</Strong></p>
+          <p><strong>Passo a Passo:</strong></p>
+          <p>
+            1° passo - Ao iniciar o APK na primeira tela clique em <i class="ri-add-circle-line"></i><br>
+            2° passo - Na segunda tela insira qualquer nome em Name*<br>
+            3° passo - Em public port* e private port coloque sempre 6374<br>
+            4° passo - Clique em Add Port Forwarding<br>
+            5° passo - na ultima tela aparece em Public IP e Private IP, mande só <strong>Public IP</strong> e a porta 6374 para o jogador Client, aguarde ele conectar e pronto.
+          </p>
+        </div>
+      </section>
+      <section class="topicos">
+        <ul class="links">
+          <li><a href="http://">Emulador</a></li>
+          <li><a href="http://">BIOS</a></li>
+          <li> <a href="http://">ROMS</a></li>
+        </ul>
+      </section>
+
+
+
+
+
+
+
+    </div>
+  </main>
+  <footer class="footer-distributed text-primary">
+    <div class="container container-footer">
+      <div class="footer-left">
+        <h3>Poké<span>Play</span></h3>
+        <p class="footer-links">
+          <a href="">Home</a>
+          <a href="">Consoles</a>
+          <a href="">WhatsApp</a>
+        </p>
+      </div>
+      <div class="footer-right">
+        <h3>Sobre nossos grupos:</h3>
+        <p class="footer-company-about">
+          Temos dois grupos no WhatsApp: um para os jogos até a terceira geração, focado nos jogos de GBA, e outro para jogos a partir da quarta geração, principalmente os de NDS.
+        </p>
+      </div>
+    </div>
+    <div class="direitos">
+      <p>
+        Todos os direitos reservados | <strong>PokéPlay©</strong>
+      </p>
+    </div>
+  </footer>
+  <script src="../../script.js"></script>
 </body>
 
 

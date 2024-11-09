@@ -10,3 +10,5 @@
 /* HOME */
 @import "./home/main.css";
 @import "./home/consoles.css";
+/* TUTORIAIS */
+@import "./tutorias/tutorial_estrutura.css";

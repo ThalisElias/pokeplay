@@ -1,4 +1,4 @@
-main {
+.main {
   background-color: var(--bg-main);
   overflow: hidden;
 }
@@ -55,6 +55,7 @@ main {
 @media (max-width: 800px) {
   .main_container {
     padding-top: 0;
+    margin-bottom: 2rem;
     grid-template-columns: 1fr;
     height: 350px;
   }

@@ -1,0 +1,65 @@
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 3fr 160px;
+  grid-template-areas: "sidenav content topicos";
+}
+.sidenav {
+  grid-area: sidenav;
+}
+.content {
+  grid-area: content;
+}
+.topicos {
+  grid-area: topicos;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+}
+
+.sidenav {
+  padding: 30px;
+}
+.sidenav .docs,
+.topicos .links {
+  display: grid;
+  gap: 30px;
+}
+.tutoriais_link li {
+  padding: 0.5rem;
+}
+.tutoriais_link li:hover {
+  border-radius: 5px;
+  background: var(--bg-btn);
+  color: var(--highlight);
+}
+.bios,
+.emulador {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.emulador span {
+  color: var(--text-primary);
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+.firered {
+  background: linear-gradient(135deg, #ff4500, #ff6347, #ffd700);
+}
+.emerald {
+  background: linear-gradient(135deg, #008000, #00bfff, #50c878);
+}
+.leafgreen {
+  background: linear-gradient(135deg, #32cd32, #7fff00, #adff2f);
+}
+.ruby {
+  background: linear-gradient(135deg, #8b0000, #ff4500, #ffa07a);
+}
+.sapphire {
+  background: linear-gradient(135deg, #00008b, #1e90ff, #87cefa);
+}
