@@ -42,7 +42,7 @@
 }
 .botao._3ds:hover {
   background: linear-gradient(135deg, #9f1b18, #e34f49);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* Botão GBC */
 .botao.gbc {
@@ -50,7 +50,7 @@
 }
 .botao.gbc:hover {
   background: linear-gradient(135deg, #6f3388, #a851c9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* Botão NDS */
 .botao.nds {
@@ -59,7 +59,7 @@
 }
 .botao.nds:hover {
   background: linear-gradient(135deg, #3f3f3f, #8a8a8a);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* Botão GBA */
 .botao.gba {
@@ -67,5 +67,5 @@
 }
 .botao.gba:hover {
   background: linear-gradient(135deg, #0b5e86, #36a0e0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }

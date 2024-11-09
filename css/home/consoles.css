@@ -7,13 +7,14 @@
   gap: 1rem;
 }
 .console {
-  box-shadow: 0 6px 8px -4px rgba(10, 24, 51, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0 1.2rem;
   border-radius: 5px;
   text-align: left;
-  height: 250px;
   width: 250px;
+  height: 250px;
 }
+
 .console h3 {
   margin-top: 1rem;
   position: relative;
@@ -37,36 +38,80 @@
 .console.gbc {
   background: linear-gradient(135deg, #7d3c98, #be63dd);
 }
+.console.gbc:hover {
+  background: linear-gradient(135deg, #6f3388, #a851c9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .console.gba {
   background: linear-gradient(135deg, #0e76a8, #43c1ff);
+}
+.console.gba:hover {
+  background: linear-gradient(135deg, #0b5e86, #36a0e0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .console.ds3 {
   background: linear-gradient(135deg, #b8201a, #ee6055);
 }
+.console.ds3:hover {
+  background: linear-gradient(135deg, #9f1b18, #e34f49);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 .console.nds {
   background: linear-gradient(135deg, #4a4a4a, #9a9a9a);
+}
+.console.nds:hover {
+  background: linear-gradient(135deg, #3f3f3f, #8a8a8a);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 .console p {
   padding: 1rem;
 }
-@media (max-width: 800px) {
-  .consoles_container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 450px) {
+@media (max-width: 1024px) {
   .consoles_container {
     display: flex;
     overflow-x: auto;
     height: auto;
     gap: 1rem;
   }
+  /* Largura da barra de rolagem no Chrome, Safari e Edge */
+  .consoles_container::-webkit-scrollbar {
+    width: 8px; /* Largura da barra vertical */
+    height: 8px; /* Altura da barra horizontal */
+  }
+
+  /* Cor de fundo da barra de rolagem */
+  .consoles_container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px; /* Arredonda as bordas do track */
+  }
+
+  /* Cor do "polegar" da barra de rolagem (parte que move) */
+  .consoles_container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar */
+    border-radius: 10px; /* Arredonda o polegar */
+    border: 2px solid #f1f1f1; /* Espaço ao redor do polegar */
+  }
+
+  /* Cor do polegar ao passar o mouse por cima */
+  .consoles_container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  /* Estilos para Firefox */
+  .consoles_container {
+    scrollbar-width: thin; /* Define uma barra mais fina */
+    scrollbar-color: #888 #f1f1f1; /* thumb-color track-color */
+  }
+  .console {
+    width: 250px;
+  }
+  .console p {
+    padding: auto;
+  }
   .console h3 img {
     position: absolute;
     width: 100px;
     top: -38px;
-  }
-  .console {
-    flex: 0 0 250px;
   }
 }
