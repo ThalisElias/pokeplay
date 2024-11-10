@@ -33,3 +33,27 @@ const toggleItem = (item) => {
     item.classList.add("show-dropdown");
   }
 };
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll(".sidenav a[href^='#']");
+
+  function scrollSuave(event) {
+    event.preventDefault();
+
+    const hrefItem = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(hrefItem);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }
+
+  linksInternos.forEach((item) => {
+    item.addEventListener("click", scrollSuave);
+  });
+}
+
+initScrollSuave();

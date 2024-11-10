@@ -1,10 +1,12 @@
 .estrutura {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) 3fr 160px;
+  grid-template-columns: minmax(auto, 1fr) 3fr 160px;
   grid-template-areas: "sidenav content topicos";
 }
 .sidenav {
   grid-area: sidenav;
+  border-right: 1px solid;
 }
 .content {
   grid-area: content;
@@ -21,19 +23,29 @@
   gap: 30px;
 }
 
-.sidenav {
+.sidenav,
+.topicos {
+  margin: 0 auto;
   padding: 30px;
-}
-.sidenav .docs,
-.topicos .links {
   display: grid;
   gap: 30px;
 }
-.tutoriais_link li {
-  padding: 0.5rem;
+.topicos h3 {
+  display: block;
 }
-.tutoriais_link li:hover {
+.sidenav .docs,
+.topicos .links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.tutoriais_link li,
+.tutoriais_link .sidenav div a {
+  padding: 0.5rem;
   border-radius: 5px;
+}
+.tutoriais_link li:hover,
+.tutoriais_link .sidenav div a:hover {
   background: var(--bg-btn);
   color: var(--highlight);
 }
@@ -44,15 +56,17 @@
   gap: 1rem;
 }
 .emulador span {
+  display: inline-block;
   color: var(--text-primary);
   border-radius: 5px;
   padding: 0.3rem;
+  margin: 0.1rem;
 }
 .firered {
   background: linear-gradient(135deg, #ff4500, #ff6347, #ffd700);
 }
 .emerald {
-  background: linear-gradient(135deg, #008000, #00bfff, #50c878);
+  background: linear-gradient(135deg, #006400, #3cb371, #98fb98);
 }
 .leafgreen {
   background: linear-gradient(135deg, #32cd32, #7fff00, #adff2f);
@@ -62,4 +76,40 @@
 }
 .sapphire {
   background: linear-gradient(135deg, #00008b, #1e90ff, #87cefa);
+}
+
+.topicos ul.links {
+  padding-left: 1rem;
+  border-left: 1px solid;
+}
+@media (max-width: 800px) {
+  .estrutura {
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-areas:
+      "sidenav"
+      "content"
+      "topicos";
+  }
+  .content {
+    padding: 0;
+  }
+  .sidenav .links,
+  .topicos .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .tutoriais_link li {
+    background: var(--bg-main);
+  }
+  .tutoriais_link li + h3 {
+    background: none;
+  }
+  .topicos .links {
+    display: flex;
+  }
+  .topicos ul.links,
+  .sidenav {
+    border: none;
+  }
 }
