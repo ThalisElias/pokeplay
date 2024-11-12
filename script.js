@@ -39,16 +39,14 @@ function initScrollSuave() {
 
   function scrollSuave(event) {
     event.preventDefault();
-
     const hrefItem = event.currentTarget.getAttribute("href");
     const section = document.querySelector(hrefItem);
+    const topo = section.offsetTop;
 
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+    window.scrollTo({
+      top: topo,
+      behavior: "smooth",
+    });
   }
 
   linksInternos.forEach((item) => {

@@ -7,6 +7,11 @@
 .sidenav {
   grid-area: sidenav;
   border-right: 1px solid;
+  padding-right: 1rem;
+}
+.topicos ul.links {
+  padding-left: 1rem;
+  border-left: 1px solid;
 }
 .content {
   grid-area: content;
@@ -76,11 +81,6 @@
 }
 .sapphire {
   background: linear-gradient(135deg, #00008b, #1e90ff, #87cefa);
-}
-
-.topicos ul.links {
-  padding-left: 1rem;
-  border-left: 1px solid;
 }
 @media (max-width: 800px) {
   .estrutura {
