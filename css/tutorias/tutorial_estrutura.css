@@ -1,66 +1,104 @@
-.estrutura {
-  margin: 0 auto;
+/* Estilo geral da página */
+.container_main {
   display: grid;
-  grid-template-columns: minmax(auto, 1fr) 3fr 160px;
-  grid-template-areas: "sidenav content topicos";
-}
-.sidenav {
-  grid-area: sidenav;
-  border-right: 1px solid;
-  padding-right: 1rem;
-}
-.topicos ul.links {
-  padding-left: 1rem;
-  border-left: 1px solid;
-}
-.content {
-  grid-area: content;
-}
-.topicos {
-  grid-area: topicos;
-}
-
-.content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px;
-  display: grid;
-  gap: 30px;
-}
-
-.sidenav,
-.topicos {
-  margin: 0 auto;
-  padding: 30px;
-  display: grid;
-  gap: 30px;
-}
-.topicos h3 {
-  display: block;
-}
-.sidenav .docs,
-.topicos .links {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.tutoriais_link li,
-.tutoriais_link .sidenav div a {
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-.tutoriais_link li:hover,
-.tutoriais_link .sidenav div a:hover {
-  background: var(--bg-btn);
-  color: var(--highlight);
-}
-.bios,
-.emulador {
-  margin-top: 1rem;
-  display: grid;
+  grid-template-columns: auto 700px auto;
   gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
-.emulador span {
+
+/* Coluna de guias (links internos) */
+.guide {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.guide li {
+  margin-bottom: 0.5rem;
+}
+
+.guide a {
+  text-decoration: none;
+  color: var(--bg-header-gba);
+  transition: color 0.2s;
+}
+
+.guide a:hover {
+  color: var(--bg-header-gba-hover);
+}
+
+/* Coluna de conteúdo principal */
+.content {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content article {
+  margin-bottom: 2rem;
+}
+.content h2 {
+  margin-bottom: 1rem;
+}
+.content h3 {
+  color: var(--bg-header-gba);
+  margin-bottom: 1rem;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Coluna de links de arquivos */
+.files {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.files h3 {
+  margin-bottom: 1rem;
+}
+
+.files ul {
+  list-style: none;
+  padding: 0;
+}
+
+.files li {
+  margin-bottom: 0.5rem;
+}
+
+.files a {
+  color: var(--bg-header-gba);
+  transition: color 0.2s;
+}
+
+.files a:hover {
+  color: var(--bg-header-gba-hover);
+}
+
+/* Breadcrumb para mobile */
+.breadcrumb {
+  display: none; /* Inicialmente escondido */
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.breadcrumb a {
+  margin-right: 0.5rem;
+  color: var(--bg-header-gba);
+}
+
+.breadcrumb a:hover {
+  color: var(--bg-header-gba-hover);
+}
+.content span {
   display: inline-block;
   color: var(--text-primary);
   border-radius: 5px;
@@ -82,34 +120,18 @@
 .sapphire {
   background: linear-gradient(135deg, #00008b, #1e90ff, #87cefa);
 }
+/* Responsividade - Mobile */
 @media (max-width: 800px) {
-  .estrutura {
-    grid-template-columns: minmax(200px, 1fr);
-    grid-template-areas:
-      "sidenav"
-      "content"
-      "topicos";
+  .container_main {
+    grid-template-columns: 1fr;
   }
-  .content {
-    padding: 0;
+
+  .guide {
+    display: none; /* Esconde as colunas laterais */
   }
-  .sidenav .links,
-  .topicos .links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  .tutoriais_link li {
-    background: var(--bg-main);
-  }
-  .tutoriais_link li + h3 {
-    background: none;
-  }
-  .topicos .links {
-    display: flex;
-  }
-  .topicos ul.links,
-  .sidenav {
-    border: none;
+
+  .breadcrumb {
+    display: flex; /* Exibe o breadcrumb no mobile */
+    flex-wrap: wrap;
   }
 }

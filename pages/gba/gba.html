@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header bg-header-gba">
     <nav class="nav container">
       <div class="nav__data">
         <a href="../../index.html" class="nav__logo link text-primary">PokéPlay</a>
@@ -23,7 +23,7 @@
           <i class="ri-close-line nav__toggle-close"></i>
         </div>
       </div>
-      <div class="nav__menu" id="nav-menu">
+      <div class="nav__menu bg-header-gba" id="nav-menu">
         <ul class="nav__list">
           <li><a href="../../index.html" class="nav__link text-primary">Home</a></li>
 
@@ -219,71 +219,80 @@
     </nav>
 
   </header>
-  <main class="tutoriais_link">
-    <div class="container">
-      <div class="estrutura">
-        <section class="sidenav">
-          <ul class="links">
-            <li><a href="#bios">BIOS</a></li>
-            <li><a href="#emulador">Emulador</a></li>
-            <li> <a href="#apkport">Port.Forwarder</a></li>
-          </ul>
-        </section>
-        <section class="content">
-          <h3>Emulação de Cabo Link via Wi-fi para trocas/Batalhas</h3>
-          <div class="bios" id="bios">
-            <h3>1ª - BIOS - EMULADOR</h3>
-            <p><strong>Para se conectar como Server/Client é precio ter o arquivo BIOS (LINK NO FINAL DO TUTORIAL) no MyBoy ou PizzaBoy.</strong></p>
-            <p><strong>Passo a Passo:</strong></p>
-            <p>
-              1° passo - Vá em configurações(Settings). <br>
-              2° passo - Avançado. <br>
-              3° passo - selecione as opções Use BIOS e Boot BIOS. <br>
-              4° passo -selecione o arquivo BIOS baixado em seu celular.
-            </p>
-          </div>
-          <div class="emulador" id="emulador">
-            <h3>2ª - Conexão Client</h3>
-            <p><Strong>Para conectar como Wi-fi/Client é preciso inserir o IP PUBLIC do jogador Server</Strong></p>
-            <p><strong>Passo a Passo:</strong></p>
-            <p>
-              1° passo - Com o jogo aberto, vá em configurações<br>
-              2° passo - Link Remote<br>
-              3° passo - Wi-fi Client<br>
-              4° passo - Insira o <strong>IP PUBLIC</strong> do jogador Server e a porta 6374.
-            </p>
-            <p><strong>OBS: Se a ROM for diferente, exemplo: <span class="firered">Fire Red</span> vs <span class="emerald">Emerald</span> aparecerá uma mensagem pedindo para inserir a ROM oposta da sua, na opção LOCATE GAME coloque a ROM e segue normal.</strong></p>
-            <p>Todas as <strong>ROMS</strong> de <strong>GBA</strong> se conectam: <br>
-              <span class="firered">Fire Red</span> <span class="leafgreen">Leaf Green</span> <span class="sapphire">Sapphire</span> <span class="ruby">Ruby</span> <span class="emerald">Emerald</span>
-            </p>
-          </div>
-          <div class="apkport" id="apkport">
-            <h3>3ª - Conexão Apk Port Forwarder</h3>
-            <p><Strong>Para conectar como Wi-fi Server é preciso o aplicativo Apk Port Forwarder</Strong></p>
-            <p><strong>Passo a Passo:</strong></p>
-            <p>
-              1° passo - Ao iniciar o APK na primeira tela clique em <i class="ri-add-circle-line"></i><br>
-              2° passo - Na segunda tela insira qualquer nome em Name*<br>
-              3° passo - Em Public Port* e Private Port coloque sempre 6374<br>
-              4° passo - Clique em Add Port Forwarding<br>
-              5° passo - na ultima tela aparece em Public IP e Private IP, mande só <strong>Public IP</strong> e a porta 6374 para o jogador Client, aguarde ele conectar e pronto.
-            </p>
-          </div>
-        </section>
-        <div class="topicos">
-          <ul class="links">
-
-            <h3>Arquivos:</h3>
-
-            <li><a href="#bios">BIOS</a></li>
-            <li><a href="#emulador">ROMS</a></li>
-            <li> <a href="#apk"> Port.Forwarder</a></li>
+  <main class="tutorial-page">
+    <div class="container container_main">
+      <!-- Breadcrumb (aparece no mobile) -->
+      <nav class="breadcrumb">
+        <a href="#topic1">BIOS /</a>
+        <a href="#topic2">Emulador /</a>
+        <a href="#topic3">Port Forwarder /</a>
+        <a href="#topic4">Arquivos</a>
+      </nav>
+      <!-- Coluna de guias (links internos) -->
+      <aside>
+        <ul class="guide">
+          <h3 id="topic4">Guia:</h3><br>
+          <li><a href="#topic1">BIOS</a></li>
+          <li><a href="#topic2">Emulador</a></li>
+          <li><a href="#topic3">Port Forwarder</a></li>
+        </ul>
+      </aside>
+      <!-- Coluna de conteúdo principal -->
+      <section class="content">
+        <h2>Emulação de Cabo Link via Wi-fi para trocas/Batalhas</h2>
+        <article id="topic1">
+          <h3>1° - BIOS no emulador</h3>
+          <p> <strong>Para se conectar como Server/Client é preciso ter o arquivo BIOS (LINK NO FINAL DO TUTORIAL) no MyBoy ou PizzaBoy.</strong></p>
+          <p>Passo a passo de ativação da BIOS: <br>
+            1° passo - Com o jogo aberto, vá em configurações <br>
+            2° passo - Link Remote <br>
+            3° passo - Wi-fi Client <br>
+            4° passo - Insira o IP PUBLIC do jogador Server e a porta 6374.
+          </p>
+        </article>
+        <article id="topic2">
+          <h3>2° - Client Server</h3>
+          <p><strong>Para conectar como Wi-fi/Client é preciso inserir o IP PUBLIC do jogador Server</strong></p>
+          <p>Passo a Passo de conexão do jogador client: <br>
+            1° passo - Com o jogo aberto, vá em configurações <br>
+            2° passo - Link Remote <br>
+            3° passo - Wi-fi Client <br>
+            4° passo - Insira o IP PUBLIC do jogador Server e a porta 6374.
+          </p>
+          <p>OBS: Se a ROM for diferente, exemplo: <span class="firered">Fire Red</span> vs <span class="emerald">Emerald</span> aparecerá uma mensagem pedindo para inserir a ROM oposta da sua, na opção LOCATE GAME coloque a ROM e segue normal.</p>
+          <p>Todas as <strong>ROMS</strong> de <strong>GBA</strong> se conectam: <br>
+            <span class="firered">Fire Red</span> <span class="leafgreen">Leaf Green</span> <span class="sapphire">Sapphire</span> <span class="ruby">Ruby</span> <span class="emerald">Emerald</span>
+          </p>
+        </article>
+        <article id="topic3">
+          <h3>Aplicativo - Port Forwarder</h3>
+          <p><strong>Para conectar como Wi-fi Server é preciso o aplicativo Apk Port Forwarder</strong></p>
+          <p>
+            1° passo - Ao iniciar o APK na primeira tela clique em <i class="ri-add-circle-line"></i><br>
+            2° passo - Na segunda tela insira qualquer nome em Name*<br>
+            3° passo - Em Public Port* e Private Port coloque sempre 6374<br>
+            4° passo - Clique em Add Port Forwarding<br>
+            5° passo - na ultima tela aparece em Public IP e Private IP, mande só <strong>Public IP</strong> e a porta 6374 para o jogador Client, aguarde ele conectar e pronto.
+          </p>
+        </article>
+      </section>
+      <!-- Coluna de links de arquivos -->
+      <aside>
+        <div class="files">
+          <h3 id="topic4">Arquivos</h3>
+          <ul>
+            <li><a href="#bios-download">Baixar BIOS</a></li>
+            <li><a href="#roms-download">Baixar ROMs</a></li>
+            <li><a href="#port-forwarder-download">Baixar Port Forwarder</a></li>
           </ul>
         </div>
-      </div>
+      </aside>
     </div>
   </main>
-  <footer class="footer-distributed text-primary tutorias">
+
+  </main>
+
+  <footer class="footer-distributed text-primary tutorias bg-header-gba">
     <div class="container container-footer">
       <div class="footer-left">
         <h3>Poké<span>Play</span></h3>

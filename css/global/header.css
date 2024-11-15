@@ -1,5 +1,5 @@
 .header {
-  /* position: sticky; */
+  z-index: 999; /* valor maior que o das imagens */
   top: 0;
   left: 0;
   width: 100%;
@@ -46,6 +46,7 @@
 
 @media screen and (max-width: 1120px) {
   .nav__menu {
+    z-index: 999;
     background-color: var(--bg-header);
     position: absolute;
     left: 0;

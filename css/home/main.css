@@ -14,7 +14,6 @@
   padding: 1.5rem 0;
   display: grid;
   justify-items: center;
-  z-index: 99;
 }
 
 .main_container .main__left p {
@@ -33,7 +32,6 @@
   height: auto;
   position: absolute;
   z-index: 1;
-  bottom: 150;
 }
 .main_container .main__right .img1 {
   left: 20px;

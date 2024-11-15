@@ -18,11 +18,9 @@
 
 .console h3 {
   margin-top: 1rem;
-  position: relative;
   text-align: center;
 }
 .console h3 img {
-  position: absolute;
   width: 100px;
   top: -50px;
 }
