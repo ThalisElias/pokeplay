@@ -72,7 +72,8 @@
   margin-bottom: 0.5rem;
 }
 
-.files a {
+.files a,
+.link_gba {
   color: var(--bg-header-gba);
   transition: color 0.2s;
 }
